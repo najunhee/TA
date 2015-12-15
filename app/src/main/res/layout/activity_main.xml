@@ -33,12 +33,47 @@
                 android:onClick="mOnClick"
                 android:text="menu1" />
 
-            <Button
+            <FrameLayout
                 android:id="@+id/button2"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:onClick="mOnClick"
-                android:text="menu2" />
+                android:layout_height="50dp"
+                android:clickable="true"
+                android:orientation="horizontal" >
+
+                <FrameLayout
+                    android:id="@+id/top_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#ffffff" >
+                </FrameLayout>
+
+                <LinearLayout
+                    android:id="@+id/top_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left|center_vertical"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/btnDisconnect"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="14dp"
+                        android:src="@drawable/com_back_btn_alpha"
+                        android:clickable="false" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="9dp"
+                        android:layout_marginRight="10dp"
+                        android:text="MENU2"
+                        android:textColor="@color/selector_title_text_color"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </FrameLayout>
 
             <Button
                 android:id="@+id/button3"
