@@ -29,4 +29,11 @@
         <item name="android:background">@color/black_overlay</item>
     </style>
 
+    <style name="x_popup_menu_theme1" parent="Widget.AppCompat.PopupMenu">
+        <item name="android:popupBackground">@drawable/com_quick_top_n</item>
+    </style>
+    <style name="x_popup_menu_theme2" parent="Widget.AppCompat.PopupMenu">
+        <item name="android:popupBackground">@drawable/com_quick_bottom_n</item>
+    </style>
+
 </resources>

@@ -23,6 +23,9 @@
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_image_view_test"
             android:theme="@style/FullscreenTheme"></activity>
+        <activity
+            android:name=".listview.ListViewActivity">
+        </activity>
     </application>
 
 </manifest>

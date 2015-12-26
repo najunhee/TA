@@ -1,11 +1,13 @@
 package net.helpgod.ta;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+
+import net.helpgod.ta.listview.ListViewActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -30,6 +32,9 @@ public class MainActivity extends AppCompatActivity {
             case R.id.button2:
                 break;
             case R.id.button3:
+                Intent i = new Intent(this, ListViewActivity.class);
+                startActivity(i);
+
                 break;
             case R.id.button4:
                 break;
