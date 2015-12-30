@@ -32,7 +32,7 @@ public class ListViewActivity extends Activity {
 
         }
 
-        ListAdapter mAdapter = new ListAdapter(this, QuestionForSliderMenu);
+        List2Adapter mAdapter = new List2Adapter(this, QuestionForSliderMenu);
 
         listView.setAdapter(mAdapter);
 
